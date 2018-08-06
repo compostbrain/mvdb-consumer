@@ -1,3 +1,3 @@
 web: rails server
-sidekiq: sidekiq
+sidekiq: sidekiq -c 3
 webpack: bin/webpack-dev-server
