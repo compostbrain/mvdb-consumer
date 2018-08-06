@@ -1,0 +1,2 @@
+class PopularTvShow < ApplicationRecord
+end
