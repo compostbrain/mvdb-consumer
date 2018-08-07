@@ -7,5 +7,17 @@ class PopularTvShowsController < ApplicationController
     connection = MovieDb::PopularTvShows.new
     @popular_tv_shows =  connection.results
   end
+
+  def search
+    config = Tmdb::Configuration.get
+    @base_url = config.images.base_url
+    response= Tmdb::Search.tv(params[:search_tv_shows])
+    if response.results.any?
+      @popular_tv_shows = response.results
+    else
+      redirect_to popular_tv_shows_path, alert: "No Results"
+    end
+  end
+  
   
 end

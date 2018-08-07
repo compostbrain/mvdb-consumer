@@ -1,0 +1,221 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/configuration?api_key=fb6a1d3f38c3d97f67df6d141f936f29
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Content-Type:
+      - application/json; charset=utf-8
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+      Cache-Control:
+      - public, max-age=28800
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 07 Aug 2018 18:29:58 GMT
+      Etag:
+      - W/"0ce3f5547eafffc83bd8c255fb330f91"
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '39'
+      X-Ratelimit-Reset:
+      - '1533666608'
+      Content-Length:
+      - '490'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA3VS0W7bMAz8Fz0HTdcmW5dfGQaBthhbiCwJFOUgLfrvExmnddbtieT5eKTOfDN+ggGLObyZDgraSsEczMicD9utfnvgyXUPiYYtb/PWbEzBvhLav+jlv/wO+pOjlG3xrzLplzk/Pz62D+cfLxq+PWlM5AcfIZjfGxPSkFb83V54P5+Uvd9peFFsUdprWCvkVBhppfHP7p2C1+5lnTsRSkcf8Msm1/bx+7O0rxsK+xC+Dl3v+kl/35h+hDigPeFF+eBq4MYBT9YBo6ShJHuK6RwtFK3bsyKwn9Gy54ACdj4NBHm8aE48OtC0ugFFr4eiAYn90fetO0Xpa+MJevEpwqRKPWGb62wn/a04t+AatChi9iU52WvJbKxTh7QCqMa22CScIyHqmXi3riYtB4xIzQbNSIcPFQvbwkBSjWnC3A6qpcuRSuK6q1poxtUFleUlIJ8TnczNY9unGplk75vp+s51rRYKMCPNXp+bgVhUc4AebTpadVSBxPKr2hCnBEqu9uJlm6Sm3CFThuh1vztYVrrChAGbH9d0xlhFotm3uFfaxxQ/kk+nl5pwqAEUyOmE0a4taSZylYRhCD6K3u2pTBBL+LgBnm+W8kyte8kvWbizd5husbST/QP844lDMQQAAA==
+    http_version: 
+  recorded_at: Tue, 07 Aug 2018 18:29:58 GMT
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/discover/tv?api_key=fb6a1d3f38c3d97f67df6d141f936f29
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Content-Type:
+      - application/json; charset=utf-8
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 07 Aug 2018 18:29:58 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '38'
+      X-Ratelimit-Reset:
+      - '1533666608'
+      Content-Length:
+      - '5807'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Tue, 07 Aug 2018 18:29:58 GMT
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/configuration?api_key=fb6a1d3f38c3d97f67df6d141f936f29
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Content-Type:
+      - application/json; charset=utf-8
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+      Cache-Control:
+      - public, max-age=28800
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 07 Aug 2018 18:30:00 GMT
+      Etag:
+      - W/"0ce3f5547eafffc83bd8c255fb330f91"
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '37'
+      X-Ratelimit-Reset:
+      - '1533666608'
+      Content-Length:
+      - '490'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA3VS0W7bMAz8Fz0HTdcmW5dfGQaBthhbiCwJFOUgLfrvExmnddbtieT5eKTOfDN+ggGLObyZDgraSsEczMicD9utfnvgyXUPiYYtb/PWbEzBvhLav+jlv/wO+pOjlG3xrzLplzk/Pz62D+cfLxq+PWlM5AcfIZjfGxPSkFb83V54P5+Uvd9peFFsUdprWCvkVBhppfHP7p2C1+5lnTsRSkcf8Msm1/bx+7O0rxsK+xC+Dl3v+kl/35h+hDigPeFF+eBq4MYBT9YBo6ShJHuK6RwtFK3bsyKwn9Gy54ACdj4NBHm8aE48OtC0ugFFr4eiAYn90fetO0Xpa+MJevEpwqRKPWGb62wn/a04t+AatChi9iU52WvJbKxTh7QCqMa22CScIyHqmXi3riYtB4xIzQbNSIcPFQvbwkBSjWnC3A6qpcuRSuK6q1poxtUFleUlIJ8TnczNY9unGplk75vp+s51rRYKMCPNXp+bgVhUc4AebTpadVSBxPKr2hCnBEqu9uJlm6Sm3CFThuh1vztYVrrChAGbH9d0xlhFotm3uFfaxxQ/kk+nl5pwqAEUyOmE0a4taSZylYRhCD6K3u2pTBBL+LgBnm+W8kyte8kvWbizd5husbST/QP844lDMQQAAA==
+    http_version: 
+  recorded_at: Tue, 07 Aug 2018 18:30:00 GMT
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/search/tv?api_key=fb6a1d3f38c3d97f67df6d141f936f29&query=Silicon%20Valley
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Content-Type:
+      - application/json; charset=utf-8
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+      Cache-Control:
+      - public, max-age=21600
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 07 Aug 2018 18:30:00 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '36'
+      X-Ratelimit-Reset:
+      - '1533666608'
+      Content-Length:
+      - '1019'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA6WVXW7bOBDHr0LoWfZKtWXLeauz3jb9CFo7zm7RDQJaHEsTU6RKUnKcokCP0b1eT7JDOdkkdpJFUEAPEjkznOH/N6OvQcVzCA7iMHDacXluwNbS2eCgf7PiDWxr8d/e56+BNpijom3FS/IPZigx04qdcilhE4QBiuBgECXDXhg8ZtJoB+eZrpWj49LoeoE3YNqcht1REgaVtg4MZeEKivH3byJLzDD+6yjOf+9/Wh/N9eTT4Ts8bZy13Ysqp7BLNNadczTngjt/8Iso7nciegaBj1fVkht0G6op7fYHaRjkoAyco/Cl9ZKz8LY6yVVet9kEoMh7wbOVMLq6zSdtVsm0F799lcw/nrxcn5xOxpdqkBzPxtfpaKqnQViT9ZFirgBWYF50HGQFy7UUzNS2YHrJSi3AKHb/msLWowJdSSAL69iXmktcIgjmNLN1lgG9cgOtoQROJhmv+ILsKWjBlZCo8q0l3RH7wI1Dir1hqGyFhrwXG/YeV8De1CKHn9//sUyvFYPLCgyCIjfG6dnJjIGiOwIwFGd7Nt02+/n9RxrZcNcWyV+xlyUFzOjFost0SV6ckgVFAtO+IRIEbV2yyujc8LL0y+tCt9VJbHwZTudAhxkKRxdgNts1VnJKHx1bYH6Tzv0Mul6JVtUtcYbk/xzMZ8HZt/D/aD5gJxRvrpxXa+a0ueF7mEaj/iN8P+h0l/g93qN92OOLw0Qlx9FscjKZH5uLP6blpHg1rJQ4egL2tBP1OvFoB/aoOxgM7rM+Gj2P9eXrgcrzPM1e48cj4+r5W/3u/dW01+ejh2AXtaV79kwKrySqTNbCCzYhCtgsK0oUrhVy5qAB9qe+UshXrdzoofCRCM9WUCLIQMnNqiVbak12jhV6vYtaQawSQKLOfF8oViuDDZf0QdkAL31XoFK64Q61ss8EAzIDzvoYe+NsS0QaDW+JeML6LgrxLgqDfRTyZe/DVLy9HE0xyvWXbDydxptkuFhdzZ9AYdiJ0v25F3XjqP8LKKhayt3B9mitIU0Ot9adiuYOEzqrS2p4TlxYP10sW2rT9ut4fEjDzk/FNWVJHf6Gl0jL5CbBOWp2b029XqvMH906CQKCuKCJ6DZsAQV6mO4d346znPYppGeP0CjRgg+0qJF6k5Of32RrbaR4EIeHUaAiXGde2YN9cT0KSZr0o1sUnrB+1lTY3v2e1nsKR1F8X+Ff0ffR7HcH+40UDiQ0aKnBbmSmt7Hhje62c/F6UcCidtSZtHlMx5ULkiEJGYH7ossO0XnBJLV4OwiMLbAKt1FYVmgSUWnnhTSgYN3ycIcpTh+UKLU9/RO1elDYbZ+fffsXMIF4/AcJAAA=
+    http_version: 
+  recorded_at: Tue, 07 Aug 2018 18:30:00 GMT
+recorded_with: VCR 4.0.0

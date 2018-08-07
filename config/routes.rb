@@ -1,7 +1,9 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
-  resources :popular_tv_shows
+  resources :popular_tv_shows 
+  get '/popular_tv_shows_search', to: 'popular_tv_shows#search'
+
   namespace :admin do
       resources :users
       resources :announcements
