@@ -1,13 +1,29 @@
 <h1>Popular TV Shows</h1>
-
+<form role="form">
+	<div class="form-group">
+    <%= form_tag("/search", method: "get") do %>
+      <%= label_tag(:q, "Search for:") %>
+      <%= text_field_tag(:q, nil, placeholder: 'Enter a TV Show Title', class: "form-control") %>
+      <%= submit_tag("Search", type: "submit", class: "btn btn-primary") %>
+    <% end %>
+  </div>
+</form>
 <div class="card">
   <div class="card-body">
-    <% @popular_tv_shows.each_with_index do |tv_show, index| %>
-      <% if index != 0 %>
-        <div class="row"><div class="col"><hr /></div></div>
-      <% end %>
-
-
+    <% @popular_tv_shows.each do |show| %>
+      <div class="card">
+        <div class="card-body">
+          <h3><%= link_to show.name, popular_tv_show_path(show) %></h3>
+          <div class="row">
+            <div class="col-md-2"><%= image_tag "#{@base_url}w92#{show.poster_path}" %></div>
+            <div class="col-md-10"><%= simple_format show.overview %></div>
+            
+          </div>
+          <p>
+            <a class="btn" href="#">View details »</a>
+          </p>
+        </div>
+      </div>
     <% end %>
 
     <% if @popular_tv_shows.empty? %>
