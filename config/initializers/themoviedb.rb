@@ -1,0 +1,1 @@
+Tmdb::Api.key(Rails.application.credentials.movie_db_api_key)
