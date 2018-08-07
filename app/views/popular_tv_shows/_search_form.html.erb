@@ -1,0 +1,7 @@
+<div class="form-group">
+  <%= form_tag("/popular_tv_shows_search", method: "get") do %>
+    <%= label_tag(:search_tv_shows, "Search TV Shows:") %>
+    <%= text_field_tag(:search_tv_shows, nil, placeholder: 'Enter a TV Show Title', class: "form-control") %>
+    <%= submit_tag("Search", type: "submit", class: "btn btn-primary") %>
+  <% end %>
+</div>
