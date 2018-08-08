@@ -6,14 +6,14 @@
     <% @popular_tv_shows.each do |show| %>
       <div class="card">
         <div class="card-body">
-          <h3><%= link_to show.name, popular_tv_show_path(show) %></h3>
+          <h3><%= link_to show.name, tv_shows_show_details_path(show_id: show.id) %></h3>
           <div class="row">
             <div class="col-md-2"><%= image_tag "#{@base_url}w92#{show.poster_path}" %></div>
             <div class="col-md-10"><%= simple_format show.overview %></div>
-            
+
           </div>
           <p>
-            <a class="btn" href="#">View details »</a>
+            <%= link_to "View details »", tv_shows_show_details_path(show_id: show.id) %>
           </p>
         </div>
       </div>
@@ -22,6 +22,6 @@
     <% if @popular_tv_shows.empty? %>
       <div>Exciting stuff coming very soon!</div>
     <% end %>
-    
+
   </div>
 </div>
