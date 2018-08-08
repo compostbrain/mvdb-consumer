@@ -8,6 +8,10 @@ class PopularTvShowsController < ApplicationController
     @popular_tv_shows =  connection.results
   end
 
+  def show_details
+    @popular_tv_show = params[:show]
+  end
+
   def search
     config = Tmdb::Configuration.get
     @base_url = config.images.base_url

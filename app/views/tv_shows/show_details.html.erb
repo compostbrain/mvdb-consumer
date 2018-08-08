@@ -1,0 +1,50 @@
+<h1>TV Show Details</h1>
+
+<div class="card">
+  <div class="card-header">
+    <div class="row">
+      <div class="col-md-2"><%= link_to image_tag("#{@base_url}w92#{@show.poster_path}"), @show.homepage %>  </div>
+      <div class="col-md-10"><h1><%= @show.name %></h1></div>
+    </div>
+    
+  </div>
+  <div class="card-body">
+   
+ 
+    <div class="row">
+     
+      <div class="col-md-3">
+        <strong>Seasons: <%= @show.number_of_seasons %></strong>
+        
+      
+      </div>
+      <div class="col-md-3">
+        <strong>Popularity: <%= @show.popularity %></strong>
+        
+      
+      </div>
+      <div class="col-md-3">
+        <strong>Vote Count: <%= @show.vote_count %></strong>
+        
+      
+      </div>
+      <div class="col-md-3">
+        <strong>First Air Date: <%= @show.first_air_date %></strong>
+        
+      
+      </div>
+      
+    </div>
+
+    <div class="row">
+     
+      <div class="col-md-12">
+        <h4>Overview:</h4>
+        <%= simple_format @show.overview %>
+      
+      </div>
+      
+    </div>
+    </div>
+  </div>
+</div>
