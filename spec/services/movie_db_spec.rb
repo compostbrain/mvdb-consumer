@@ -12,15 +12,6 @@ RSpec.describe "movie_db service", type: :service do
       expect(fake_service).to have_received(:results)
       expect(MovieDb::PopularTvShows).to have_received(:new)
       expect(results).to eq(["The David Letterman Show", "The Big Bang Theory"])
-    end
-
-    it "description" do
-      
-    end
-    
-    
+    end    
   end
-  
-  
-  
 end
